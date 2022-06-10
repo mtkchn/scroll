@@ -9,13 +9,9 @@ export class AppComponent {
   items = [0,1,2,3,4,5,6,7,8,9,10];
 
   title = 'testBootstrap';
-
-  scrollTop(el: any){
-    el as ElementRef;
-    console.log(el);
-    el.scrollBy({ top: +30, behavior: 'smooth' });
-  }
-  scrollBottom(el: any){
-    console.log(el);
+  
+  scroll(el: any, value: number){
+    const scrollContainer: HTMLElement = el as HTMLElement;
+    scrollContainer.scrollBy({ top: value, left: 0, behavior: 'smooth' });
   }
 }

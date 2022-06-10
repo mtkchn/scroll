@@ -1,10 +1,10 @@
 <div class="main">
-  <div class="btn" (click)="scrollTop(container)">/\</div>
+  <div class="btn" (click)="scroll(container, -100)">/\</div>
   <div  class="container">
     <div #container class="wrapper">
       <div *ngFor="let item of items" class="item">{{item}}</div>
     </div>
   </div>
-  <div class="btn" (click)="scrollBottom(container)">\/</div>
+  <div class="btn" (click)="scroll(container, +100)">\/</div>
 
 </div>

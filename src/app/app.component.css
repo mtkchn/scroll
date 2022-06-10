@@ -4,23 +4,34 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;          
 }
 
-.container{
+.wrapper{
     border: 2px solid blue;
     width: 40vw;
-    overflow: hidden;
     height: 40vh;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .btn{
     margin: 10px;
     padding: 20px;
-    background-color: blue;
+    background-color: grey;
+    
 }
 .item{
     height: 10vh;
     width: 100%;
     background-color: brown;
     border-bottom: 1px solid white;
+    text-align: center;
+    line-height: 10vh;
+    vertical-align: middle;
 }
